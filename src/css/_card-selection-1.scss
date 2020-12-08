@@ -1,0 +1,54 @@
+.dual-section-cards {
+    .card-section-1{
+        margin-right: 20px;
+        .welcome-card {
+            background-color: $darkBackground;
+            padding: 30px 20px;
+            color: $white;
+            border-radius: 20px;
+            margin: 20px 0;
+            .card-greetings {
+                font-size: 13px;
+            }
+            .card-title {}
+        }
+        .activity-card {
+            background-color: $white;
+            padding: 15px;
+            border-radius: 20px;
+            .activity-title-bar {
+                @include flex-jc-ai(row , space-between , center);
+                margin-bottom: 15px;
+                .title-bar-title {}
+                .activity-month-week {
+                    background-color: $darkBackground;
+                    border-radius: 15px;
+                    font-size: 10px;
+                    padding: 5px 10px;
+                    a {
+                        color: $black;
+                        border-radius: 20px;
+                        padding: 5px 10px;
+                        background-color: white;
+                    }
+                }
+            }
+            .activity-card-body {
+                .side-numbar {}
+                .card-graph {
+                    .total-months {
+                        span {}
+                    }
+                    .month-week-graph-container {
+                        .card-graph-month {
+                            .month-activity {}
+                        }
+                        .card-graph-week {
+                            .week-activity {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

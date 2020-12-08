@@ -14,6 +14,12 @@
       flex-basis: 90vw;
 }
 
+.dual-section-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -96,5 +102,122 @@ a {
 .sidebar-log-out a i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.main {
+  padding: 10px 30px;
+  background-color: #dbe9eeaf;
+}
+
+.main .task-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+}
+
+.main .task-bar-title {
+  font-weight: bolder;
+  margin-right: 30px;
+}
+
+.main .task-bar-form input {
+  padding: 10px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 30px;
+  outline: none;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
+  width: 300px;
+}
+
+.main .task-bar-calender {
+  margin-left: auto;
+  margin-right: 60px;
+  font-size: 20px;
+}
+
+.main .task-bar-calender time {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.main .task-bar-dropdown {
+  margin-right: 10px;
+}
+
+.main .task-bar-dropdown select {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 13px;
+}
+
+.main .task-bar-notification a {
+  font-size: 25px;
+  color: black;
+}
+
+.dual-section-cards .card-section-1 {
+  margin-right: 20px;
+}
+
+.dual-section-cards .card-section-1 .welcome-card {
+  background-color: #03045e;
+  padding: 30px 20px;
+  color: white;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.dual-section-cards .card-section-1 .welcome-card .card-greetings {
+  font-size: 13px;
+}
+
+.dual-section-cards .card-section-1 .activity-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.dual-section-cards .card-section-1 .activity-card .activity-title-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.dual-section-cards .card-section-1 .activity-card .activity-title-bar .activity-month-week {
+  background-color: #03045e;
+  border-radius: 15px;
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+.dual-section-cards .card-section-1 .activity-card .activity-title-bar .activity-month-week a {
+  color: black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+.main {
+    padding: 10px 30px;
+    background-color: $liteBackground;
+    .task-bar {
+        @include flex-jc-ai(row , none, center);
+        padding: 15px 0;
+        &-title {
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+        &-form {
+            input {
+                padding: 10px 30px;
+                border: 1px solid rgba(0, 0, 0, 0.24);
+                border-radius: 30px;
+                outline: none;
+                box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
+                width: 300px;
+            }
+        }
+        &-calender {
+            margin-left: auto;
+            margin-right: 60px;
+            font-size: 20px;
+            i {}
+            time {
+                font-size: 13px;
+                font-weight: bolder;
+            }
+        }
+        &-dropdown {
+            margin-right: 10px;
+            select {
+                border: none;
+                background-color: transparent;
+                outline: none;
+                font-size: 13px;
+            }
+        }
+        &-notification {
+            a {
+                font-size: 25px;
+                color: $black;
+            }
+        }
+    }
+}

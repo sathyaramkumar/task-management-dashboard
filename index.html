@@ -6,8 +6,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width , initial-scale=1.0">
 
-        <!-- fornt icon link -->
+        <!-- font icon link -->
         <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+        <!-- google font family -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- css link -->
+        <link rel="stylesheet" href="src/css/style.css"> 
     </head>
     <body>
         <div class="container">
@@ -114,12 +121,393 @@
                         </div>
 
                         <div class="activity-card">
+
                             <div class="activity-title-bar">
                                 <h4 class="title-bar-title">
                                     Activities
                                 </h4>
-                                
+                                <div class="activity-month-week">
+                                    <a href="#month-graph">The month</a>
+                                    <a href="#week-graph">The week</a>
+                                </div>
                             </div>
+
+                            <div class="activity-card-body">
+
+                                <div class="side-numbar">
+                                    <span>100</span>
+                                    <span>70</span>
+                                    <span>50</span>
+                                    <span>30</span>
+                                    <span>15</span>
+                                    <span>0</span>
+                                </div>
+
+                                <div class="card-graph">
+
+                                    <div class="total-months">
+                                        <span>Jan</span>
+                                        <span>Feb</span>
+                                        <span>Mar</span>
+                                        <span>Apr</span>
+                                        <span>May</span>
+                                        <span>Jun</span>
+                                        <span>Jul</span>
+                                        <span>Aug</span>
+                                        <span>Sep</span>
+                                        <span>Oct</span>
+                                        <span>Nov</span>
+                                        <span>Dec</span>
+                                    </div>
+
+                                    <div class="month-week-graph-container">
+
+                                        <div class="card-graph-month" id="month-graph">
+
+                                            <div class="month-activity"></div>
+                                            <div class="month-activity"></div>
+                                            <div class="month-activity"></div>
+                                            <div class="month-activity"></div>
+                                            <div class="month-activity"></div>
+                                            <div class="month-activity"></div>
+                                            <div class="month-activity"></div>
+                                            <div class="month-activity"></div>
+                                            <div class="month-activity"></div>
+                                            <div class="month-activity"></div>
+                                            <div class="month-activity"></div>
+                                            <div class="month-activity"></div>
+                                        </div>
+    
+                                        <div class="card-graph-week" id="week-graph">
+    
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                            <div class="week-activity"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="card-table">
+                            <caption>Today's Tasks</caption>
+                            <thead>
+                                <tr>
+                                    <td>Department</td>
+                                    <td>Stage</td>
+                                    <td>Assigned</td>
+                                    <td>Team</td>
+                                    <td>Date</td>
+                                    <td>Status</td>
+                                    <td>Actions</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <img src="src/img/avatar-anisha.png" alt="avator">
+                                        <img src="src/img/avatar-anisha.png" alt="avator">
+                                        <img src="src/img/avatar-anisha.png" alt="avator">
+                                    </td>
+                                    <td>Development</td>
+                                    <td>David</td>
+                                    <td>Mobil App</td>
+                                    <td>
+                                        <time datetime="12-09-2020">12-09-2020</time>
+                                    </td>
+                                    <td>
+                                        <span class="pending">pending</span>
+                                    </td>
+                                    <td>
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <img src="src/img/avatar-anisha.png" alt="avator">
+                                        <img src="src/img/avatar-anisha.png" alt="avator">
+                                        <img src="src/img/avatar-anisha.png" alt="avator">
+                                    </td>
+                                    <td>Testing Phase</td>
+                                    <td>Mke</td>
+                                    <td>Web Dev</td>
+                                    <td>
+                                        <time datetime="12-09-2020">12-09-2020</time>
+                                    </td>
+                                    <td>
+                                        <span class="done">done</span>
+                                    </td>
+                                    <td>
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <img src="src/img/avatar-anisha.png" alt="avator">
+                                        <img src="src/img/avatar-anisha.png" alt="avator">
+                                        <img src="src/img/avatar-anisha.png" alt="avator">
+                                    </td>
+                                    <td>Development</td>
+                                    <td>Ghulm</td>
+                                    <td>Ui Testing</td>
+                                    <td>
+                                        <time datetime="12-09-2020">12-09-2020</time>
+                                    </td>
+                                    <td>
+                                        <span class="done">Testing</span>
+                                    </td>
+                                    <td>
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="card-section-2">
+
+                        <div class="card-calender">
+
+                            <div class="august-calender" id="augustCalender">
+
+                                <div class="august-calender-title">
+                                    <h5>August 2020</h5>
+                                    <a href="#septemberCalender">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+    
+                                <ul class="august-calender-weeks">
+                                    <li>SU</li>
+                                    <li>MO</li>
+                                    <li>TU</li>
+                                    <li>WE</li>
+                                    <li>TH</li>
+                                    <li>FR</li>
+                                    <li>SA</li>
+                                </ul>
+    
+                                <ul class="august-calender-days">
+                                    <li>26</li>
+                                    <li>27</li>
+                                    <li>28</li>
+                                    <li>29</li>
+                                    <li>30</li>
+                                    <li>31</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                    <li>13</li>
+                                    <li>14</li>
+                                    <li>15</li>
+                                    <li>16</li>
+                                    <li>17</li>
+                                    <li>18</li>
+                                    <li>19</li>
+                                    <li>20</li>
+                                    <li>21</li>
+                                    <li>22</li>
+                                    <li>23</li>
+                                    <li>24</li>
+                                    <li>25</li>
+                                    <li>26</li>
+                                    <li>27</li>
+                                    <li>28</li>
+                                    <li>29</li>
+                                </ul>
+                            </div>
+
+                            <div class="september-calender" id="septemberCalender">
+
+                                <div class="september-calender-title">
+                                    <a href="#augustCalender">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                    <h5>September 2020</h5>
+                                    <a href="#octoberCalender">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+    
+                                <ul class="september-calender-weeks">
+                                    <li>SU</li>
+                                    <li>MO</li>
+                                    <li>TU</li>
+                                    <li>WE</li>
+                                    <li>TH</li>
+                                    <li>FR</li>
+                                    <li>SA</li>
+                                </ul>
+    
+                                <ul class="september-calender-days">
+                                    <li>30</li>
+                                    <li>31</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                    <li>13</li>
+                                    <li>14</li>
+                                    <li>15</li>
+                                    <li>16</li>
+                                    <li>17</li>
+                                    <li>18</li>
+                                    <li>19</li>
+                                    <li>20</li>
+                                    <li>21</li>
+                                    <li>22</li>
+                                    <li>23</li>
+                                    <li>24</li>
+                                    <li>25</li>
+                                    <li>26</li>
+                                    <li>27</li>
+                                    <li>28</li>
+                                    <li>29</li>
+                                    <li>30</li>
+                                    <li>31</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </div>
+
+                            <div class="october-calender" id="octoberCalender">
+
+                                <div class="october-calender-title">
+                                    <a href="#septemberCalender">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                    <h5>October 2020</h5>
+                                </div>
+    
+                                <ul class="october-calender-weeks">
+                                    <li>SU</li>
+                                    <li>MO</li>
+                                    <li>TU</li>
+                                    <li>WE</li>
+                                    <li>TH</li>
+                                    <li>FR</li>
+                                    <li>SA</li>
+                                </ul>
+    
+                                <ul class="october-calender-days">
+                                    <li>27</li>
+                                    <li>28</li>
+                                    <li>29</li>
+                                    <li>30</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                    <li>13</li>
+                                    <li>14</li>
+                                    <li>15</li>
+                                    <li>16</li>
+                                    <li>17</li>
+                                    <li>18</li>
+                                    <li>19</li>
+                                    <li>20</li>
+                                    <li>21</li>
+                                    <li>22</li>
+                                    <li>23</li>
+                                    <li>24</li>
+                                    <li>25</li>
+                                    <li>26</li>
+                                    <li>27</li>
+                                    <li>28</li>
+                                    <li>29</li>
+                                    <li>30</li>
+                                    <li>31</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+
+                            <a href="#" class="project-card-icon">
+                                <i class="fas fa-rocket"></i>
+                            </a>
+
+                            <div class="project-card-title">
+                                <small>Open Projects</small>
+                                <h2>500</h2>
+                            </div>
+
+                            <a href="#" class="project-card-nav">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="completed-card">
+
+                            <a href="#" class="completed-card-icon">
+                                <i class="fas fa-trophy"></i>
+                            </a>
+                            
+                            <div class="completed-card-title">
+                                <small>Successfully Completed</small>
+                                <h2>3502</h2>
+                            </div>
+
+                            <a href="#" class="completed-card-nav">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="earn-card">
+
+                            <a href="#" class="earn-card-icon">
+                                <i class="fas fa-medal"></i>
+                            </a>
+                            
+                            <div class="earn-card-title">
+                                <small>Successfully Completed</small>
+                                <h2>3502</h2>
+                            </div>
+
+                            <a href="#" class="earn-card-nav">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex-basis: 10vw;
+}
+
+.main {
+    flex-basis: 90vw;
+}

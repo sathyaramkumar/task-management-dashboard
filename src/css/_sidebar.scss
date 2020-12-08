@@ -1,0 +1,48 @@
+.sidebar {
+    background-color: $darkBackground;
+    height: 100vh;
+    @include flex (column);
+    &-profile {
+        color: $white;
+        text-align: center;
+        &-avator {
+            width: 4vw;
+            height: 4vw;
+            margin-top: 20px;
+        }
+        &-name {
+            font-size: 13px
+        }
+        &-status {
+            font-weight: lighter;
+            font-size: 11px;
+        }
+    }
+    &-navs {
+        .sidebar-menu {
+            .sidebar-item {
+                text-align: center;
+                margin: 20px 0;
+                &:hover {
+                    background-color: $thickOrange;
+                }
+                .sidebar-link {
+                    font-size: 35px;
+                    color: $white;
+                    i {}
+                }
+            }
+        }
+    }
+    &-log-out {
+        text-align: center;
+        margin: auto 0 20px 0;
+        a {
+            font-size: 35px;
+            color: $white;
+            i {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar {
+  -ms-flex-preferred-size: 10vw;
+      flex-basis: 10vw;
+}
+
+.main {
+  -ms-flex-preferred-size: 90vw;
+      flex-basis: 90vw;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  outline: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sidebar {
+  background-color: #03045e;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar-profile {
+  color: white;
+  text-align: center;
+}
+
+.sidebar-profile-avator {
+  width: 4vw;
+  height: 4vw;
+  margin-top: 20px;
+}
+
+.sidebar-profile-name {
+  font-size: 13px;
+}
+
+.sidebar-profile-status {
+  font-weight: lighter;
+  font-size: 11px;
+}
+
+.sidebar-navs .sidebar-menu .sidebar-item {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.sidebar-navs .sidebar-menu .sidebar-item:hover {
+  background-color: #e76f51;
+}
+
+.sidebar-navs .sidebar-menu .sidebar-item .sidebar-link {
+  font-size: 35px;
+  color: white;
+}
+
+.sidebar-log-out {
+  text-align: center;
+  margin: auto 0 20px 0;
+}
+
+.sidebar-log-out a {
+  font-size: 35px;
+  color: white;
+}
+
+.sidebar-log-out a i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=style.css.map */

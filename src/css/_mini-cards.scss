@@ -1,0 +1,80 @@
+.project-card {
+    background-color: $white;
+    margin: 20px 0;
+    @include flex-jc-ai(row , none , center);
+    padding: 10px 15px;
+    border-radius: 20px;
+    &-icon {
+        font-size: 30px;
+        padding: 10px 10px 10px 0;
+        color: $black;
+    }
+    &-title {
+        small {
+            font-size: 11px;
+        }
+        h2 {
+            font-size: 15px;
+        }
+    }
+    &-nav {
+        margin-left: auto;
+        background-color: $liteBackground;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+}
+
+.completed-card {
+    background-color: $white;
+    margin: 20px 0;
+    @include flex-jc-ai(row , none , center);
+    padding: 10px 15px;
+    border-radius: 20px;
+    &-icon {
+        font-size: 30px;
+        padding: 10px 10px 10px 0;
+        color: $black;
+    }
+    &-title {
+        small {
+            font-size: 11px;
+        }
+        h2 {
+            font-size: 15px;
+        }
+    }
+    &-nav {
+        margin-left: auto;
+        background-color: $liteBackground;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+}
+
+.earn-card {
+    background-color: $white;
+    margin: 20px 0;
+    @include flex-jc-ai(row , none , center);
+    padding: 10px 15px;
+    border-radius: 20px;
+    &-icon {
+        font-size: 30px;
+        padding: 10px 10px 10px 0;
+        color: $black;
+    }
+    &-title {
+        small {
+            font-size: 11px;
+        }
+        h2 {
+            font-size: 15px;
+        }
+    }
+    &-nav {
+        margin-left: auto;
+        background-color: $liteBackground;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+}

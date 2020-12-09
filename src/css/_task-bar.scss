@@ -1,5 +1,5 @@
 .main {
-    padding: 10px 30px;
+    padding: 10px 45px;
     background-color: $liteBackground;
     .task-bar {
         @include flex-jc-ai(row , none, center);

@@ -10,41 +10,351 @@
             .card-greetings {
                 font-size: 13px;
             }
-            .card-title {}
         }
         .activity-card {
             background-color: $white;
             padding: 15px;
             border-radius: 20px;
+            margin-bottom: 20px;
             .activity-title-bar {
                 @include flex-jc-ai(row , space-between , center);
                 margin-bottom: 15px;
-                .title-bar-title {}
                 .activity-month-week {
                     background-color: $darkBackground;
                     border-radius: 15px;
                     font-size: 10px;
-                    padding: 5px 10px;
-                    a {
-                        color: $black;
-                        border-radius: 20px;
+                    padding: 8px 10px;
+                    .week-check-label {
+                        color: $white;
                         padding: 5px 10px;
-                        background-color: white;
+                        border-radius: 20px;
+                    }
+                    .week-check {
+                        display: none;
+                    }
+                    .month-check-label {
+                        margin-left: 10px;
+                        color: $white;
+                        padding: 5px 10px;
+                        border-radius: 20px;
+                    }
+                    .month-check {
+                        display: none;
                     }
                 }
             }
             .activity-card-body {
-                .side-numbar {}
+                @include flex(row);
+                .side-numbar {
+                    @include flex-jc-ai(column , center , center);
+                    span {
+                        padding: 15px 0;
+                        color: $textMuted;
+                        font-size: 13px;
+                    }
+                }
                 .card-graph {
                     .total-months {
-                        span {}
+                        display: block;
+                        padding: 0 0 30px 28px;
+                        width: 850px;
+                        span {
+                            padding: 0 20px;
+                            color: $textMuted;
+                            font-size: 13px;
+                        }
                     }
                     .month-week-graph-container {
-                        .card-graph-month {
-                            .month-activity {}
+
+                        .month-container {
+                            display:block;
+                            .card-graph-month {
+                                @include flex-jc-ai(row , space-between , flex-end);
+                                height: 300px;
+                                width: 820px;
+                                padding: 0 0 40px 50px;
+                                .month-activity {
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 30px;
+                                    background-color: $thickOrange;
+                                    &::before {
+                                        content: '';
+                                        display: block;
+                                        position: relative;
+                                        bottom: 100px;
+                                        height: 60px;
+                                        width: 20px;
+                                        border-radius: 30px;
+                                        background-color: $thickOrange;
+                                    }
+                                    &:nth-child(1) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 180px;
+                                            height: 150px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(2) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 120px;
+                                            height: 100px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(3) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 180px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(4) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 170px;
+                                            height: 80px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(5) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 140px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(6) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 250px;
+                                            height: 100px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(7) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 120px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(8) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 220px;
+                                            height: 140px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(9) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 250px;
+                                            height: 100px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(10) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 80px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(11) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 170px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(12) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 240px;
+                                            height: 80px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                }
+                            }
                         }
-                        .card-graph-week {
-                            .week-activity {}
+
+
+
+                        .week-container {
+                            display: none;
+                            .card-graph-week {
+                                @include flex-jc-ai(row , space-between , flex-end);
+                                height: 300px;
+                                width: 820px;
+                                padding: 0 0 40px 50px;
+                                .week-activity {
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 30px;
+                                    background-color: $thickOrange;
+                                    &::before {
+                                        content: '';
+                                        display: block;
+                                        position: relative;
+                                        bottom: 100px;
+                                        height: 60px;
+                                        width: 20px;
+                                        border-radius: 30px;
+                                        background-color: $thickOrange;
+                                    }
+                                    &:nth-child(1) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 180px;
+                                            height: 150px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(2) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 120px;
+                                            height: 100px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(3) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 180px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(4) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 170px;
+                                            height: 80px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(5) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 140px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(6) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 250px;
+                                            height: 100px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(7) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 120px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(8) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 220px;
+                                            height: 140px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(9) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 250px;
+                                            height: 100px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(10) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 80px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(11) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 170px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(12) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 240px;
+                                            height: 80px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(13) {
+                                        background-color: $darkBackground;
+                                        &::before {
+                                            content: '';
+                                            bottom: 170px;
+                                            height: 80px;
+                                            background-color: $darkBackground;
+                                        }
+                                    }
+                                    &:nth-child(14) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 80px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(15) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 180px;
+                                            height: 150px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                    &:nth-child(16) {
+                                        &::before {
+                                            content: '';
+                                            bottom: 200px;
+                                            height: 140px;
+                                            background-color: $thickOrange;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }

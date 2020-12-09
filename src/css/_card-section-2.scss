@@ -1,0 +1,116 @@
+.card-section-2 {
+    margin: 0 30px;
+    .card-calender {
+        @include flex(row);
+        background-color: $white;
+        border-radius: 20px;
+        .august-calender {
+            display: none;
+            width: 300px;
+            padding: 20px;
+            &-title {
+                @include flex-jc-ai(row , center , center);
+                padding: 20px 0;
+                h5 {
+                    font-size: 15px;
+                }
+                a {
+                    margin-left: 10px;
+                    color: black;
+                    i {}
+                }
+            }
+            &-weeks {
+                @include flex-jc-ai(row , space-between , center);
+                width: 240px;
+                font-weight: bolder;
+                padding-left: 15px;
+                li {}
+            }
+            &-days {
+                padding: 15px 10px;
+                width: 260px;
+                
+                li {
+                    display: inline-block;
+                    text-align: center;
+                    width: 30px;
+                    padding: 0 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .september-calender {
+            width: 300px;
+            padding: 20px;
+            &-title {
+                @include flex-jc-ai(row , center , center);
+                padding: 20px 0;
+                h5 {
+                    font-size: 15px;
+                }
+                a {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: black;
+                    i {}
+                }
+            }
+            &-weeks {
+                @include flex-jc-ai(row , space-between , center);
+                width: 240px;
+                font-weight: bolder;
+                padding-left: 15px;
+                li {}
+            }
+            &-days {
+                padding: 15px 10px;
+                width: 260px;
+                
+                li {
+                    display: inline-block;
+                    text-align: center;
+                    width: 30px;
+                    padding: 0 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .october-calender {
+            display: none;
+            width: 300px;
+            padding: 20px;
+            &-title {
+                @include flex-jc-ai(row , center , center);
+                padding: 20px 0;
+                h5 {
+                    font-size: 15px;
+                    margin-left: 10px;
+                }
+                a {
+                    color: black;
+                    i {}
+                }
+            }
+            &-weeks {
+                @include flex-jc-ai(row , space-between , center);
+                width: 240px;
+                font-weight: bolder;
+                padding-left: 15px;
+                li {}
+            }
+            &-days {
+                padding: 15px 10px;
+                width: 260px;
+                
+                li {
+                    display: inline-block;
+                    text-align: center;
+                    width: 30px;
+                    padding: 0 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

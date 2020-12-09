@@ -127,8 +127,12 @@
                                     Activities
                                 </h4>
                                 <div class="activity-month-week">
-                                    <a href="#month-graph">The month</a>
-                                    <a href="#week-graph">The week</a>
+
+                                    <label for="weekCheck" class="week-check-label" id="weekCheckLabel">The week</label>
+                                    <input type="checkbox" onclick="onClick()" class="week-check" id="weekCheck" name="checkbox">
+
+                                    <label for="monthCheck" class="month-check-label" id="monthCheckLabel">The month</label>
+                                    <input type="checkbox" onclick="onClick2()" class="month-check" id="monthCheck" name="checkbox">
                                 </div>
                             </div>
 
@@ -162,40 +166,46 @@
 
                                     <div class="month-week-graph-container">
 
-                                        <div class="card-graph-month" id="month-graph">
+                                        <div class="month-container" id="month-graph">
 
-                                            <div class="month-activity"></div>
-                                            <div class="month-activity"></div>
-                                            <div class="month-activity"></div>
-                                            <div class="month-activity"></div>
-                                            <div class="month-activity"></div>
-                                            <div class="month-activity"></div>
-                                            <div class="month-activity"></div>
-                                            <div class="month-activity"></div>
-                                            <div class="month-activity"></div>
-                                            <div class="month-activity"></div>
-                                            <div class="month-activity"></div>
-                                            <div class="month-activity"></div>
+                                            <div class="card-graph-month" >
+
+                                                <div class="month-activity"></div>
+                                                <div class="month-activity"></div>
+                                                <div class="month-activity"></div>
+                                                <div class="month-activity"></div>
+                                                <div class="month-activity"></div>
+                                                <div class="month-activity"></div>
+                                                <div class="month-activity"></div>
+                                                <div class="month-activity"></div>
+                                                <div class="month-activity"></div>
+                                                <div class="month-activity"></div>
+                                                <div class="month-activity"></div>
+                                                <div class="month-activity"></div>
+                                            </div>
                                         </div>
+
+                                        <div class="week-container" id="week-graph">
+
+                                            <div class="card-graph-week">
     
-                                        <div class="card-graph-week" id="week-graph">
-    
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
-                                            <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                                <div class="week-activity"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -513,5 +523,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="src/js/index.js"></script>
     </body>
 </html>

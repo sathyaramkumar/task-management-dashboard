@@ -4,11 +4,16 @@
 }
 
 .sidebar {
-    flex-basis: 10vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 10vw;
 }
 
 .main {
-    flex-basis: 90vw;
+    width: 90vw;
+    margin-left: 145px;
 }
 
 .dual-section-cards {

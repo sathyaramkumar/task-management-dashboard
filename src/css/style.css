@@ -5,13 +5,16 @@
 }
 
 .sidebar {
-  -ms-flex-preferred-size: 10vw;
-      flex-basis: 10vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 10vw;
 }
 
 .main {
-  -ms-flex-preferred-size: 90vw;
-      flex-basis: 90vw;
+  width: 90vw;
+  margin-left: 145px;
 }
 
 .dual-section-cards {
@@ -63,21 +66,21 @@ a {
 .sidebar-profile-avator {
   width: 4vw;
   height: 4vw;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .sidebar-profile-name {
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .sidebar-profile-status {
   font-weight: lighter;
-  font-size: 11px;
+  font-size: 0.6875rem;
 }
 
 .sidebar-navs .sidebar-menu .sidebar-item {
   text-align: center;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 .sidebar-navs .sidebar-menu .sidebar-item:hover {
@@ -85,17 +88,17 @@ a {
 }
 
 .sidebar-navs .sidebar-menu .sidebar-item .sidebar-link {
-  font-size: 35px;
+  font-size: 2.1875rem;
   color: white;
 }
 
 .sidebar-log-out {
   text-align: center;
-  margin: auto 0 20px 0;
+  margin: auto 0 1.25rem 0;
 }
 
 .sidebar-log-out a {
-  font-size: 35px;
+  font-size: 2.1875rem;
   color: white;
 }
 
@@ -105,7 +108,7 @@ a {
 }
 
 .main {
-  padding: 10px 45px;
+  padding: 0.625rem 2.8125rem;
   background-color: #dbe9eeaf;
 }
 
@@ -123,72 +126,76 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 0;
+  padding: 0.9375rem 0;
 }
 
 .main .task-bar-title {
   font-weight: bolder;
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 
 .main .task-bar-form input {
-  padding: 10px 30px;
-  border: 1px solid rgba(0, 0, 0, 0.24);
-  border-radius: 30px;
+  padding: 0.625rem 1.875rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.24);
+  border-radius: 1.875rem;
   outline: none;
-  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
-          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
-  width: 300px;
+  -webkit-box-shadow: 0.0625rem 0.0625rem 0.625rem rgba(0, 0, 0, 0.116);
+          box-shadow: 0.0625rem 0.0625rem 0.625rem rgba(0, 0, 0, 0.116);
+  width: 18.75rem;
 }
 
 .main .task-bar-calender {
   margin-left: auto;
-  margin-right: 60px;
-  font-size: 20px;
+  margin-right: 3.75rem;
+  font-size: 1.25rem;
 }
 
 .main .task-bar-calender time {
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: bolder;
 }
 
 .main .task-bar-dropdown {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .main .task-bar-dropdown select {
   border: none;
   background-color: transparent;
   outline: none;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .main .task-bar-notification a {
-  font-size: 25px;
+  font-size: 1.5625rem;
   color: black;
 }
 
 .dual-section-cards .card-section-1 {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .dual-section-cards .card-section-1 .welcome-card {
   background-color: #03045e;
-  padding: 30px 20px;
+  padding: 1.875rem 1.25rem;
   color: white;
-  border-radius: 20px;
-  margin: 20px 0;
+  width: 58vw;
+  height: 18vh;
+  border-radius: 1.25rem;
+  margin: 1.25rem 0;
 }
 
 .dual-section-cards .card-section-1 .welcome-card .card-greetings {
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .dual-section-cards .card-section-1 .activity-card {
   background-color: white;
-  padding: 15px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  width: 58vw;
+  height: 58vh;
+  padding: 0.9375rem;
+  border-radius: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-title-bar {
@@ -205,20 +212,20 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-title-bar .activity-month-week {
   background-color: #03045e;
-  border-radius: 15px;
-  font-size: 10px;
-  padding: 8px 10px;
+  border-radius: 0.9375rem;
+  font-size: 0.625rem;
+  padding: 0.5rem 0.625rem;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-title-bar .activity-month-week .week-check-label {
   color: white;
-  padding: 5px 10px;
-  border-radius: 20px;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 1.25rem;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-title-bar .activity-month-week .week-check {
@@ -226,10 +233,10 @@ a {
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-title-bar .activity-month-week .month-check-label {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   color: white;
-  padding: 5px 10px;
-  border-radius: 20px;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 1.25rem;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-title-bar .activity-month-week .month-check {
@@ -263,21 +270,21 @@ a {
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .side-numbar span {
-  padding: 15px 0;
+  padding: 0.9375rem 0;
   color: rgba(0, 0, 0, 0.486);
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .total-months {
   display: block;
-  padding: 0 0 30px 28px;
-  width: 850px;
+  padding: 0 0 1.875rem 1.75rem;
+  width: 53.125rem;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .total-months span {
-  padding: 0 20px;
+  padding: 0 1.25rem;
   color: rgba(0, 0, 0, 0.486);
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container {
@@ -298,15 +305,15 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 300px;
-  width: 820px;
-  padding: 0 0 40px 50px;
+  height: 18.75rem;
+  width: 51.25rem;
+  padding: 0 0 2.5rem 3.125rem;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity {
-  width: 20px;
-  height: 20px;
-  border-radius: 30px;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 1.875rem;
   background-color: #e76f51;
 }
 
@@ -314,17 +321,17 @@ a {
   content: '';
   display: block;
   position: relative;
-  bottom: 100px;
-  height: 60px;
-  width: 20px;
-  border-radius: 30px;
+  bottom: 6.25rem;
+  height: 3.75rem;
+  width: 1.25rem;
+  border-radius: 1.875rem;
   background-color: #e76f51;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(1)::before {
   content: '';
-  bottom: 180px;
-  height: 150px;
+  bottom: 11.25rem;
+  height: 9.375rem;
   background-color: #e76f51;
 }
 
@@ -334,15 +341,15 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(2)::before {
   content: '';
-  bottom: 120px;
-  height: 100px;
+  bottom: 7.5rem;
+  height: 6.25rem;
   background-color: #03045e;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(3)::before {
   content: '';
-  bottom: 200px;
-  height: 180px;
+  bottom: 12.5rem;
+  height: 11.25rem;
   background-color: #e76f51;
 }
 
@@ -352,15 +359,15 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(4)::before {
   content: '';
-  bottom: 170px;
-  height: 80px;
+  bottom: 10.625rem;
+  height: 5rem;
   background-color: #03045e;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(5)::before {
   content: '';
-  bottom: 200px;
-  height: 140px;
+  bottom: 12.5rem;
+  height: 8.75rem;
   background-color: #e76f51;
 }
 
@@ -370,8 +377,8 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(6)::before {
   content: '';
-  bottom: 250px;
-  height: 100px;
+  bottom: 15.625rem;
+  height: 6.25rem;
   background-color: #03045e;
 }
 
@@ -381,29 +388,29 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(7)::before {
   content: '';
-  bottom: 200px;
-  height: 120px;
+  bottom: 12.5rem;
+  height: 7.5rem;
   background-color: #03045e;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(8)::before {
   content: '';
-  bottom: 220px;
-  height: 140px;
+  bottom: 13.75rem;
+  height: 8.75rem;
   background-color: #e76f51;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(9)::before {
   content: '';
-  bottom: 250px;
-  height: 100px;
+  bottom: 15.625rem;
+  height: 6.25rem;
   background-color: #e76f51;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(10)::before {
   content: '';
-  bottom: 200px;
-  height: 80px;
+  bottom: 12.5rem;
+  height: 5rem;
   background-color: #e76f51;
 }
 
@@ -413,8 +420,8 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(11)::before {
   content: '';
-  bottom: 200px;
-  height: 170px;
+  bottom: 12.5rem;
+  height: 10.625rem;
   background-color: #03045e;
 }
 
@@ -424,8 +431,8 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .month-container .card-graph-month .month-activity:nth-child(12)::before {
   content: '';
-  bottom: 240px;
-  height: 80px;
+  bottom: 15rem;
+  height: 5rem;
   background-color: #03045e;
 }
 
@@ -447,15 +454,15 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 300px;
-  width: 820px;
-  padding: 0 0 40px 50px;
+  height: 18.75rem;
+  width: 51.25rem;
+  padding: 0 0 2.5rem 3.125rem;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity {
-  width: 20px;
-  height: 20px;
-  border-radius: 30px;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 1.875rem;
   background-color: #e76f51;
 }
 
@@ -463,17 +470,17 @@ a {
   content: '';
   display: block;
   position: relative;
-  bottom: 100px;
-  height: 60px;
-  width: 20px;
-  border-radius: 30px;
+  bottom: 6.25rem;
+  height: 3.75rem;
+  width: 1.25rem;
+  border-radius: 1.875rem;
   background-color: #e76f51;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(1)::before {
   content: '';
-  bottom: 180px;
-  height: 150px;
+  bottom: 11.25rem;
+  height: 9.375rem;
   background-color: #e76f51;
 }
 
@@ -483,15 +490,15 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(2)::before {
   content: '';
-  bottom: 120px;
-  height: 100px;
+  bottom: 7.5rem;
+  height: 6.25rem;
   background-color: #03045e;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(3)::before {
   content: '';
-  bottom: 200px;
-  height: 180px;
+  bottom: 12.5rem;
+  height: 11.25rem;
   background-color: #e76f51;
 }
 
@@ -501,15 +508,15 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(4)::before {
   content: '';
-  bottom: 170px;
-  height: 80px;
+  bottom: 10.625rem;
+  height: 5rem;
   background-color: #03045e;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(5)::before {
   content: '';
-  bottom: 200px;
-  height: 140px;
+  bottom: 12.5rem;
+  height: 8.75rem;
   background-color: #e76f51;
 }
 
@@ -519,8 +526,8 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(6)::before {
   content: '';
-  bottom: 250px;
-  height: 100px;
+  bottom: 15.625rem;
+  height: 6.25rem;
   background-color: #03045e;
 }
 
@@ -530,29 +537,29 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(7)::before {
   content: '';
-  bottom: 200px;
-  height: 120px;
+  bottom: 12.5rem;
+  height: 7.5rem;
   background-color: #03045e;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(8)::before {
   content: '';
-  bottom: 220px;
-  height: 140px;
+  bottom: 13.75rem;
+  height: 8.75rem;
   background-color: #e76f51;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(9)::before {
   content: '';
-  bottom: 250px;
-  height: 100px;
+  bottom: 15.625rem;
+  height: 6.25rem;
   background-color: #e76f51;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(10)::before {
   content: '';
-  bottom: 200px;
-  height: 80px;
+  bottom: 12.5rem;
+  height: 5rem;
   background-color: #e76f51;
 }
 
@@ -562,8 +569,8 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(11)::before {
   content: '';
-  bottom: 200px;
-  height: 170px;
+  bottom: 12.5rem;
+  height: 10.625rem;
   background-color: #03045e;
 }
 
@@ -573,8 +580,8 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(12)::before {
   content: '';
-  bottom: 240px;
-  height: 80px;
+  bottom: 15rem;
+  height: 5rem;
   background-color: #03045e;
 }
 
@@ -584,124 +591,124 @@ a {
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(13)::before {
   content: '';
-  bottom: 170px;
-  height: 80px;
+  bottom: 10.625rem;
+  height: 5rem;
   background-color: #03045e;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(14)::before {
   content: '';
-  bottom: 200px;
-  height: 80px;
+  bottom: 12.5rem;
+  height: 5rem;
   background-color: #e76f51;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(15)::before {
   content: '';
-  bottom: 180px;
-  height: 150px;
+  bottom: 11.25rem;
+  height: 9.375rem;
   background-color: #e76f51;
 }
 
 .dual-section-cards .card-section-1 .activity-card .activity-card-body .card-graph .month-week-graph-container .week-container .card-graph-week .week-activity:nth-child(16)::before {
   content: '';
-  bottom: 200px;
-  height: 140px;
+  bottom: 12.5rem;
+  height: 8.75rem;
   background-color: #e76f51;
 }
 
 .card-table {
   border-collapse: separate;
-  border-spacing: 0 15px;
+  border-spacing: 0 0.9375rem;
   text-align: center;
 }
 
 .card-table caption {
-  width: 150px;
+  width: 9.375rem;
   font-weight: bolder;
 }
 
 .card-table thead tr td {
-  padding: 10px 30px;
-  font-size: 12px;
+  padding: 0.625rem 1.875rem;
+  font-size: 0.75rem;
   font-weight: bolder;
 }
 
 .card-table tbody tr {
-  border-spacing: 30px;
-  border-radius: 10px 0 10px 0;
+  border-spacing: 1.875rem;
+  border-radius: 0.625rem 0 0.625rem 0;
 }
 
 .card-table tbody tr:nth-child(1) {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .card-table tbody tr:nth-child(1) td span {
   background-color: #fcefb49f;
   color: #ecc743;
-  padding: 2px 9px;
-  border-radius: 10px;
+  padding: 0.125rem 0.5625rem;
+  border-radius: 0.625rem;
 }
 
 .card-table tbody tr:nth-child(2) {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .card-table tbody tr:nth-child(2) td span {
   display: block;
   background-color: #bfffbc;
   color: #38b000;
-  padding: 2px 9px;
-  border-radius: 10px;
-  width: 60px;
+  padding: 0.125rem 0.5625rem;
+  border-radius: 0.625rem;
+  width: 3.75rem;
 }
 
 .card-table tbody tr:nth-child(3) {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .card-table tbody tr:nth-child(3) td span {
   display: block;
   background-color: #caf0f8;
   color: #48cae4;
-  padding: 2px 9px;
-  border-radius: 10px;
-  width: 60px;
+  padding: 0.125rem 0.5625rem;
+  border-radius: 0.625rem;
+  width: 3.75rem;
 }
 
 .card-table tbody tr td {
   background-color: white;
-  padding: 10px 30px;
-  font-size: 12px;
+  padding: 0.625rem 1.875rem;
+  font-size: 0.75rem;
 }
 
 .card-table tbody tr td img {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .card-table tbody tr td img:nth-child(2) {
-  margin-left: -10px;
+  margin-left: -0.625rem;
 }
 
 .card-table tbody tr td img:nth-child(3) {
-  margin-left: -10px;
+  margin-left: -0.625rem;
 }
 
 .card-table tbody tr td:nth-child(1) {
-  border-radius: 10px 0 0 10px;
+  border-radius: 0.625rem 0 0 0.625rem;
 }
 
 .card-table tbody tr td:nth-child(6) {
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 .card-table tbody tr td:nth-child(7) {
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 0.625rem 0.625rem 0;
 }
 
 .card-section-2 {
-  margin: 0 30px;
+  margin: 0 1.875rem;
 }
 
 .card-section-2 .card-calender {
@@ -713,13 +720,13 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 .card-section-2 .card-calender .august-calender {
   display: none;
-  width: 300px;
-  padding: 20px;
+  width: 18.75rem;
+  padding: 1.25rem;
 }
 
 .card-section-2 .card-calender .august-calender-title {
@@ -736,15 +743,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .card-section-2 .card-calender .august-calender-title h5 {
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .card-section-2 .card-calender .august-calender-title a {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   color: black;
 }
 
@@ -762,27 +769,27 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 240px;
+  width: 15rem;
   font-weight: bolder;
-  padding-left: 15px;
+  padding-left: 0.9375rem;
 }
 
 .card-section-2 .card-calender .august-calender-days {
-  padding: 15px 10px;
-  width: 260px;
+  padding: 0.9375rem 0.625rem;
+  width: 16.25rem;
 }
 
 .card-section-2 .card-calender .august-calender-days li {
   display: inline-block;
   text-align: center;
-  width: 30px;
-  padding: 0 10px;
-  font-size: 16px;
+  width: 1.875rem;
+  padding: 0 0.625rem;
+  font-size: 1rem;
 }
 
 .card-section-2 .card-calender .september-calender {
-  width: 300px;
-  padding: 20px;
+  width: 18.75rem;
+  padding: 1.25rem;
 }
 
 .card-section-2 .card-calender .september-calender-title {
@@ -799,16 +806,16 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .card-section-2 .card-calender .september-calender-title h5 {
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .card-section-2 .card-calender .september-calender-title a {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
   color: black;
 }
 
@@ -826,28 +833,28 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 240px;
+  width: 15rem;
   font-weight: bolder;
-  padding-left: 15px;
+  padding-left: 0.9375rem;
 }
 
 .card-section-2 .card-calender .september-calender-days {
-  padding: 15px 10px;
-  width: 260px;
+  padding: 0.9375rem 0.625rem;
+  width: 16.25rem;
 }
 
 .card-section-2 .card-calender .september-calender-days li {
   display: inline-block;
   text-align: center;
-  width: 30px;
-  padding: 0 10px;
-  font-size: 16px;
+  width: 1.875rem;
+  padding: 0 0.625rem;
+  font-size: 1rem;
 }
 
 .card-section-2 .card-calender .october-calender {
   display: none;
-  width: 300px;
-  padding: 20px;
+  width: 18.75rem;
+  padding: 1.25rem;
 }
 
 .card-section-2 .card-calender .october-calender-title {
@@ -864,12 +871,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .card-section-2 .card-calender .october-calender-title h5 {
-  font-size: 15px;
-  margin-left: 10px;
+  font-size: 0.9375rem;
+  margin-left: 0.625rem;
 }
 
 .card-section-2 .card-calender .october-calender-title a {
@@ -890,27 +897,27 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 240px;
+  width: 15rem;
   font-weight: bolder;
-  padding-left: 15px;
+  padding-left: 0.9375rem;
 }
 
 .card-section-2 .card-calender .october-calender-days {
-  padding: 15px 10px;
-  width: 260px;
+  padding: 0.9375rem 0.625rem;
+  width: 16.25rem;
 }
 
 .card-section-2 .card-calender .october-calender-days li {
   display: inline-block;
   text-align: center;
-  width: 30px;
-  padding: 0 10px;
-  font-size: 16px;
+  width: 1.875rem;
+  padding: 0 0.625rem;
+  font-size: 1rem;
 }
 
 .project-card {
   background-color: white;
-  margin: 20px 0;
+  margin: 1.25rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -924,34 +931,34 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 1.25rem;
 }
 
 .project-card-icon {
-  font-size: 30px;
-  padding: 10px 10px 10px 0;
+  font-size: 1.875rem;
+  padding: 0.625rem 0.625rem 0.625rem 0;
   color: black;
 }
 
 .project-card-title small {
-  font-size: 11px;
+  font-size: 0.6875rem;
 }
 
 .project-card-title h2 {
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .project-card-nav {
   margin-left: auto;
   background-color: #dbe9eeaf;
-  padding: 5px 10px;
-  border-radius: 10px;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.625rem;
 }
 
 .completed-card {
   background-color: white;
-  margin: 20px 0;
+  margin: 1.25rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -965,34 +972,34 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 1.25rem;
 }
 
 .completed-card-icon {
-  font-size: 30px;
-  padding: 10px 10px 10px 0;
+  font-size: 1.875rem;
+  padding: 0.625rem 0.625rem 0.625rem 0;
   color: black;
 }
 
 .completed-card-title small {
-  font-size: 11px;
+  font-size: 0.6875rem;
 }
 
 .completed-card-title h2 {
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .completed-card-nav {
   margin-left: auto;
   background-color: #dbe9eeaf;
-  padding: 5px 10px;
-  border-radius: 10px;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.625rem;
 }
 
 .earn-card {
   background-color: white;
-  margin: 20px 0;
+  margin: 1.25rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1006,28 +1013,28 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 1.25rem;
 }
 
 .earn-card-icon {
-  font-size: 30px;
-  padding: 10px 10px 10px 0;
+  font-size: 1.875rem;
+  padding: 0.625rem 0.625rem 0.625rem 0;
   color: black;
 }
 
 .earn-card-title small {
-  font-size: 11px;
+  font-size: 0.6875rem;
 }
 
 .earn-card-title h2 {
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .earn-card-nav {
   margin-left: auto;
   background-color: #dbe9eeaf;
-  padding: 5px 10px;
-  border-radius: 10px;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.625rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,42 +1,46 @@
 .dual-section-cards {
     .card-section-1{
-        margin-right: 20px;
+        margin-right: 1.25rem;
         .welcome-card {
             background-color: $darkBackground;
-            padding: 30px 20px;
+            padding: 1.875rem 1.25rem;
             color: $white;
-            border-radius: 20px;
-            margin: 20px 0;
+            width: 58vw;
+            height: 18vh;
+            border-radius: 1.25rem;
+            margin: 1.25rem 0;
             .card-greetings {
-                font-size: 13px;
+                font-size: 0.8125rem;
             }
         }
         .activity-card {
             background-color: $white;
-            padding: 15px;
-            border-radius: 20px;
-            margin-bottom: 20px;
+            width: 58vw;
+            height: 58vh;
+            padding: 0.9375rem;
+            border-radius: 1.25rem;
+            margin-bottom: 1.25rem;
             .activity-title-bar {
                 @include flex-jc-ai(row , space-between , center);
-                margin-bottom: 15px;
+                margin-bottom: 0.9375rem;
                 .activity-month-week {
                     background-color: $darkBackground;
-                    border-radius: 15px;
-                    font-size: 10px;
-                    padding: 8px 10px;
+                    border-radius: 0.9375rem;
+                    font-size: 0.625rem;
+                    padding: 0.5rem 0.625rem;
                     .week-check-label {
                         color: $white;
-                        padding: 5px 10px;
-                        border-radius: 20px;
+                        padding: 0.3125rem 0.625rem;
+                        border-radius: 1.25rem;
                     }
                     .week-check {
                         display: none;
                     }
                     .month-check-label {
-                        margin-left: 10px;
+                        margin-left: 0.625rem;
                         color: $white;
-                        padding: 5px 10px;
-                        border-radius: 20px;
+                        padding: 0.3125rem 0.625rem;
+                        border-radius: 1.25rem;
                     }
                     .month-check {
                         display: none;
@@ -48,20 +52,20 @@
                 .side-numbar {
                     @include flex-jc-ai(column , center , center);
                     span {
-                        padding: 15px 0;
+                        padding: 0.9375rem 0;
                         color: $textMuted;
-                        font-size: 13px;
+                        font-size: 0.8125rem;
                     }
                 }
                 .card-graph {
                     .total-months {
                         display: block;
-                        padding: 0 0 30px 28px;
-                        width: 850px;
+                        padding: 0 0 1.875rem 1.75rem;
+                        width: 53.125rem;
                         span {
-                            padding: 0 20px;
+                            padding: 0 1.25rem;
                             color: $textMuted;
-                            font-size: 13px;
+                            font-size: 0.8125rem;
                         }
                     }
                     .month-week-graph-container {
@@ -70,29 +74,29 @@
                             display:block;
                             .card-graph-month {
                                 @include flex-jc-ai(row , space-between , flex-end);
-                                height: 300px;
-                                width: 820px;
-                                padding: 0 0 40px 50px;
+                                height: 18.75rem;
+                                width: 51.25rem;
+                                padding: 0 0 2.5rem 3.125rem;
                                 .month-activity {
-                                    width: 20px;
-                                    height: 20px;
-                                    border-radius: 30px;
+                                    width: 1.25rem;
+                                    height: 1.25rem;
+                                    border-radius: 1.875rem;
                                     background-color: $thickOrange;
                                     &::before {
                                         content: '';
                                         display: block;
                                         position: relative;
-                                        bottom: 100px;
-                                        height: 60px;
-                                        width: 20px;
-                                        border-radius: 30px;
+                                        bottom: 6.25rem;
+                                        height: 3.75rem;
+                                        width: 1.25rem;
+                                        border-radius: 1.875rem;
                                         background-color: $thickOrange;
                                     }
                                     &:nth-child(1) {
                                         &::before {
                                             content: '';
-                                            bottom: 180px;
-                                            height: 150px;
+                                            bottom: 11.25rem;
+                                            height: 9.375rem;
                                             background-color: $thickOrange;
                                         }
                                     }
@@ -100,16 +104,16 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 120px;
-                                            height: 100px;
+                                            bottom: 7.5rem;
+                                            height: 6.25rem;
                                             background-color: $darkBackground;
                                         }
                                     }
                                     &:nth-child(3) {
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 180px;
+                                            bottom: 12.5rem;
+                                            height: 11.25rem;
                                             background-color: $thickOrange;
                                         }
                                     }
@@ -117,16 +121,16 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 170px;
-                                            height: 80px;
+                                            bottom: 10.625rem;
+                                            height: 5rem;
                                             background-color: $darkBackground;
                                         }
                                     }
                                     &:nth-child(5) {
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 140px;
+                                            bottom: 12.5rem;
+                                            height: 8.75rem;
                                             background-color: $thickOrange;
                                         }
                                     }
@@ -134,8 +138,8 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 250px;
-                                            height: 100px;
+                                            bottom: 15.625rem;
+                                            height: 6.25rem;
                                             background-color: $darkBackground;
                                         }
                                     }
@@ -143,32 +147,32 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 120px;
+                                            bottom: 12.5rem;
+                                            height: 7.5rem;
                                             background-color: $darkBackground;
                                         }
                                     }
                                     &:nth-child(8) {
                                         &::before {
                                             content: '';
-                                            bottom: 220px;
-                                            height: 140px;
+                                            bottom: 13.75rem;
+                                            height: 8.75rem;
                                             background-color: $thickOrange;
                                         }
                                     }
                                     &:nth-child(9) {
                                         &::before {
                                             content: '';
-                                            bottom: 250px;
-                                            height: 100px;
+                                            bottom: 15.625rem;
+                                            height: 6.25rem;
                                             background-color: $thickOrange;
                                         }
                                     }
                                     &:nth-child(10) {
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 80px;
+                                            bottom: 12.5rem;
+                                            height: 5rem;
                                             background-color: $thickOrange;
                                         }
                                     }
@@ -176,8 +180,8 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 170px;
+                                            bottom: 12.5rem;
+                                            height: 10.625rem;
                                             background-color: $darkBackground;
                                         }
                                     }
@@ -185,8 +189,8 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 240px;
-                                            height: 80px;
+                                            bottom: 15rem;
+                                            height: 5rem;
                                             background-color: $darkBackground;
                                         }
                                     }
@@ -200,29 +204,29 @@
                             display: none;
                             .card-graph-week {
                                 @include flex-jc-ai(row , space-between , flex-end);
-                                height: 300px;
-                                width: 820px;
-                                padding: 0 0 40px 50px;
+                                height: 18.75rem;
+                                width: 51.25rem;
+                                padding: 0 0 2.5rem 3.125rem;
                                 .week-activity {
-                                    width: 20px;
-                                    height: 20px;
-                                    border-radius: 30px;
+                                    width: 1.25rem;
+                                    height: 1.25rem;
+                                    border-radius: 1.875rem;
                                     background-color: $thickOrange;
                                     &::before {
                                         content: '';
                                         display: block;
                                         position: relative;
-                                        bottom: 100px;
-                                        height: 60px;
-                                        width: 20px;
-                                        border-radius: 30px;
+                                        bottom: 6.25rem;
+                                        height: 3.75rem;
+                                        width: 1.25rem;
+                                        border-radius: 1.875rem;
                                         background-color: $thickOrange;
                                     }
                                     &:nth-child(1) {
                                         &::before {
                                             content: '';
-                                            bottom: 180px;
-                                            height: 150px;
+                                            bottom: 11.25rem;
+                                            height: 9.375rem;
                                             background-color: $thickOrange;
                                         }
                                     }
@@ -230,16 +234,16 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 120px;
-                                            height: 100px;
+                                            bottom: 7.5rem;
+                                            height: 6.25rem;
                                             background-color: $darkBackground;
                                         }
                                     }
                                     &:nth-child(3) {
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 180px;
+                                            bottom: 12.5rem;
+                                            height: 11.25rem;
                                             background-color: $thickOrange;
                                         }
                                     }
@@ -247,16 +251,16 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 170px;
-                                            height: 80px;
+                                            bottom: 10.625rem;
+                                            height: 5rem;
                                             background-color: $darkBackground;
                                         }
                                     }
                                     &:nth-child(5) {
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 140px;
+                                            bottom: 12.5rem;
+                                            height: 8.75rem;
                                             background-color: $thickOrange;
                                         }
                                     }
@@ -264,8 +268,8 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 250px;
-                                            height: 100px;
+                                            bottom: 15.625rem;
+                                            height: 6.25rem;
                                             background-color: $darkBackground;
                                         }
                                     }
@@ -273,32 +277,32 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 120px;
+                                            bottom: 12.5rem;
+                                            height: 7.5rem;
                                             background-color: $darkBackground;
                                         }
                                     }
                                     &:nth-child(8) {
                                         &::before {
                                             content: '';
-                                            bottom: 220px;
-                                            height: 140px;
+                                            bottom: 13.75rem;
+                                            height: 8.75rem;
                                             background-color: $thickOrange;
                                         }
                                     }
                                     &:nth-child(9) {
                                         &::before {
                                             content: '';
-                                            bottom: 250px;
-                                            height: 100px;
+                                            bottom: 15.625rem;
+                                            height: 6.25rem;
                                             background-color: $thickOrange;
                                         }
                                     }
                                     &:nth-child(10) {
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 80px;
+                                            bottom: 12.5rem;
+                                            height: 5rem;
                                             background-color: $thickOrange;
                                         }
                                     }
@@ -306,8 +310,8 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 170px;
+                                            bottom: 12.5rem;
+                                            height: 10.625rem;
                                             background-color: $darkBackground;
                                         }
                                     }
@@ -315,8 +319,8 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 240px;
-                                            height: 80px;
+                                            bottom: 15rem;
+                                            height: 5rem;
                                             background-color: $darkBackground;
                                         }
                                     }
@@ -324,32 +328,32 @@
                                         background-color: $darkBackground;
                                         &::before {
                                             content: '';
-                                            bottom: 170px;
-                                            height: 80px;
+                                            bottom: 10.625rem;
+                                            height: 5rem;
                                             background-color: $darkBackground;
                                         }
                                     }
                                     &:nth-child(14) {
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 80px;
+                                            bottom: 12.5rem;
+                                            height: 5rem;
                                             background-color: $thickOrange;
                                         }
                                     }
                                     &:nth-child(15) {
                                         &::before {
                                             content: '';
-                                            bottom: 180px;
-                                            height: 150px;
+                                            bottom: 11.25rem;
+                                            height: 9.375rem;
                                             background-color: $thickOrange;
                                         }
                                     }
                                     &:nth-child(16) {
                                         &::before {
                                             content: '';
-                                            bottom: 200px;
-                                            height: 140px;
+                                            bottom: 12.5rem;
+                                            height: 8.75rem;
                                             background-color: $thickOrange;
                                         }
                                     }

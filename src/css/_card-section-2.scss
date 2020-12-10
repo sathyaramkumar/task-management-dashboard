@@ -1,114 +1,108 @@
 .card-section-2 {
-    margin: 0 30px;
+    margin: 0 1.875rem;
     .card-calender {
         @include flex(row);
         background-color: $white;
-        border-radius: 20px;
+        border-radius: 1.25rem;
         .august-calender {
             display: none;
-            width: 300px;
-            padding: 20px;
+            width: 18.75rem;
+            padding: 1.25rem;
             &-title {
                 @include flex-jc-ai(row , center , center);
-                padding: 20px 0;
+                padding: 1.25rem 0;
                 h5 {
-                    font-size: 15px;
+                    font-size: 0.9375rem;
                 }
                 a {
-                    margin-left: 10px;
+                    margin-left: 0.625rem;
                     color: black;
-                    i {}
                 }
             }
             &-weeks {
                 @include flex-jc-ai(row , space-between , center);
-                width: 240px;
+                width: 15rem;
                 font-weight: bolder;
-                padding-left: 15px;
-                li {}
+                padding-left: 0.9375rem;
             }
             &-days {
-                padding: 15px 10px;
-                width: 260px;
+                padding: 0.9375rem 0.625rem;
+                width: 16.25rem;
                 
                 li {
                     display: inline-block;
                     text-align: center;
-                    width: 30px;
-                    padding: 0 10px;
-                    font-size: 16px;
+                    width: 1.875rem;
+                    padding: 0 0.625rem;
+                    font-size: 1rem;
                 }
             }
         }
         .september-calender {
-            width: 300px;
-            padding: 20px;
+            width: 18.75rem;
+            padding: 1.25rem;
             &-title {
                 @include flex-jc-ai(row , center , center);
-                padding: 20px 0;
+                padding: 1.25rem 0;
                 h5 {
-                    font-size: 15px;
+                    font-size: 0.9375rem;
                 }
                 a {
-                    margin-left: 10px;
-                    margin-right: 10px;
+                    margin-left: 0.625rem;
+                    margin-right: 0.625rem;
                     color: black;
-                    i {}
                 }
             }
             &-weeks {
                 @include flex-jc-ai(row , space-between , center);
-                width: 240px;
+                width: 15rem;
                 font-weight: bolder;
-                padding-left: 15px;
-                li {}
+                padding-left: 0.9375rem;
             }
             &-days {
-                padding: 15px 10px;
-                width: 260px;
+                padding: 0.9375rem 0.625rem;
+                width: 16.25rem;
                 
                 li {
                     display: inline-block;
                     text-align: center;
-                    width: 30px;
-                    padding: 0 10px;
-                    font-size: 16px;
+                    width: 1.875rem;
+                    padding: 0 0.625rem;
+                    font-size: 1rem;
                 }
             }
         }
         .october-calender {
             display: none;
-            width: 300px;
-            padding: 20px;
+            width: 18.75rem;
+            padding: 1.25rem;
             &-title {
                 @include flex-jc-ai(row , center , center);
-                padding: 20px 0;
+                padding: 1.25rem 0;
                 h5 {
-                    font-size: 15px;
-                    margin-left: 10px;
+                    font-size: 0.9375rem;
+                    margin-left: 0.625rem;
                 }
                 a {
                     color: black;
-                    i {}
                 }
             }
             &-weeks {
                 @include flex-jc-ai(row , space-between , center);
-                width: 240px;
+                width: 15rem;
                 font-weight: bolder;
-                padding-left: 15px;
-                li {}
+                padding-left: 0.9375rem;
             }
             &-days {
-                padding: 15px 10px;
-                width: 260px;
+                padding: 0.9375rem 0.625rem;
+                width: 16.25rem;
                 
                 li {
                     display: inline-block;
                     text-align: center;
-                    width: 30px;
-                    padding: 0 10px;
-                    font-size: 16px;
+                    width: 1.875rem;
+                    padding: 0 0.625rem;
+                    font-size: 1rem;
                 }
             }
         }
